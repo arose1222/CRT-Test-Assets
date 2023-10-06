@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                        ../Resources/common.robot
+Resource                        common.robot
 Suite Setup                     Setup Browser
 Suite Teardown                  End suite
 
@@ -7,6 +7,7 @@ Suite Teardown                  End suite
 *** Test Cases ***
 Create Account Growmore
     [Tags]                      Account                     New Account
+    #I have made the edit in CRT
     Appstate                    Home
     LaunchApp                   Sales
     ClickText                   Accounts
